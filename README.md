@@ -21,7 +21,8 @@ Ever wanted to speedtest a server, but didn't want to do funky tunnelling so you
 - run the docker container with:
 
 ```bash
-docker run --rm --net=host waja/speedtest -h
+docker run --rm --net=host waja/speedtest -h  #for help menu
+docker run --rm --net=host waja/speedtest   #for standard speedtest
 ```
 
 We don't actually _require_ `--net=host`, but if we're wanting to test native performance (or use `--source some-specific-host-IP`) then we want direct access to the relevant connections without any overhead.
